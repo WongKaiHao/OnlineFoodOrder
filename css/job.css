@@ -1,0 +1,7 @@
+input#namefocus:valid,input#add:focus:valid,input#add1:focus:valid,input#add2:focus:valid,input#add3:focus:valid,input#add4:focus:valid,input#add5:focus:valid,input#email:focus:valid{
+background:rgb(220,255,220) url(../icon/correct.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,input#add:focus:invalid,input#add1:focus:invalid,input#add2:focus:invalid,input#add3:focus:invalid,input#add4:focus:invalid,input#add5:focus:invalid,input#email:focus:invalid{
+background:rgb(255,232,233) url(../icon/wrong.png) bottom right/contain no-repeat;
+}
