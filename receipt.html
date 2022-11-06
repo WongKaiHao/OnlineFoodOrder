@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="300">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Receipt</title>
+        <style>
+        header{
+            width: 99%;
+            margin-top: 0px;
+            background-color: dimgray;
+            text-align: center;
+            position:fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            overflow: scroll;
+            background-image: url(image/body.jpeg);
+            background-size: 100%;
+        }
+        footer{
+            background-color:rgba(44, 46, 43, 0.637);
+            text-align: center;
+            background-image: url(image/footer.jpeg);
+        }
+        h1{
+            text-align: center;
+        }
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+        <img src="logo.png" alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div><br/><br/>
+        <h1>Receipt</h1>
+        <fieldset style="background-color:azure;width:70%;margin-left:auto;margin-right:auto">
+            <div class="wrapper">
+                <form action="receipt.html"> 
+                    <div class="nav">
+                        <div class="left">
+                            <address>
+                                <strong>ballan</strong>
+                                <br>
+                                <b>Taman Sunway Batu Caves</b>
+                                <br>
+                                <b>68100, Selangor</b>
+                                <br>
+                                <b>03-61892833</b>
+                            </address>
+                        </div>
+            
+                        <div class="right">
+                            <b>Date:25 April 2020</b>
+                            <br><br>
+                            <b>Receipt No:#2453</b>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="header">
+                <form action="cart.html">
+                    <table id="product" style="width: 70%; margin-left: auto;margin-right: auto; text-align: center;">
+                        <thead>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Double-Stacked Cheeseburger</td>
+                            <td>1</td>
+                            <td>RM17</td>
+                            <td>RM17</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Vegan Mushroom Bean Burger</td>
+                            <td>1</td>
+                            <td>RM6.00</td>
+                            <td>RM6.00</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Moist Chicken Burgers</td>
+                            <td>1</td>
+                            <td>RM7.50</td>
+                            <td>RM7.50</td>
+                        </tr>
+            
+                        <tr>
+                            <td>Classic Beef Burgers</td>
+                            <td>1</td>
+                            <td>RM18.00</td>
+                            <td>RM18.00</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Filet-O-Fish Burger</td>
+                            <td>1</td>
+                            <td>RM5.00</td>
+                            <td>RM5.00</td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Subtotal:</td>
+                            <td>RM44.50</td>
+                        </tr>
+            
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Service Tax (6%):</td>
+                            <td>RM2.67</td>
+                        </tr>
+                    </tbody>
+                    
+                    <tfoot>
+                        <td></td>
+                        <td></td>
+                        <th>Grand Total:</th>
+                        <th>RM47.17</th>
+                    </tfoot>
+                    </table>
+             
+                </div>
+            </form>
+        </div>    
+        </fieldset>
+        
+        <br/><br/>
+        
+        
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>

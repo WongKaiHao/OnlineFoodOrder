@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Catering</title>
+        <style>
+            header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image:url(image/body.jpeg);
+                background-size: 100%;            }
+            footer{
+                background-image:url(image/footer.jpeg);
+                background-size: 100%;            
+                    text-align: center;
+            }
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+        <img src="logo.png" alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+            <button class="dropbtn"> 
+                More<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="catering.html">CATERING</a>
+                <a href="gift.html">GIFT REDEEM</a>
+                <a href="class.html">FAST FOOD MAKINGN CLASS</a>
+                <a href="luckydraw.html">LUCKY DRAW/ CONTEST FORM</a>
+            </div>
+        </div>
+        <a href="aboutUs.html">About Us</a>
+ 
+    </div><br/><br/>
+        <table id="custom2" style ="text-align: center; margin-left: auto; margin-right: auto;">
+                <tr>
+        <td><a href="" class="title"><b>Package A</b></a></td>
+        <td><a href="" class="title"><b>Package B</b></a></td>
+    </tr>
+    <tr>
+        <td>30 sets of burgers</td>
+        <td>50 sets of burgers</td>
+    </tr>
+    <tr>
+        <td>A medium room which can fit up to 30 persons</td>
+        <td>A big room which can fit up to 50 persons</td>
+    </tr>
+    <tr>
+        <td>40pcs of nugget provided</td>
+        <td>60pcs of nugget provided</td>
+    </tr>
+<tr>
+    <td>Free photographic service provided</td>
+    <td>Free photographic service provided</td>
+</tr>
+    
+    <tr>
+        <td>Price = RM 300.00</td>
+        <td>Price = RM 500.00</td>
+    </tr>
+
+</table>
+<hr/>
+<table id="custom2" style ="text-align: center; margin-left: auto; margin-right: auto;">
+    <tr>
+        <td><a href="" class="title"><b>Package C</b></a></td>
+        <td><a href="" class="title"><b>Package D</b></a></td>
+    </tr>
+    <tr>
+        <td>70 sets of burgers</td>
+        <td>90 sets of burgers</td>
+    </tr>
+    <tr>
+        <td>A big room which can fit up to 70 persons</td>
+        <td>A big room which can fit up to 90 persons</td>
+    </tr>
+    <tr>
+        <td>80pcs of nugget provided</td>
+        <td>100pcs of nugget provided</td>
+    </tr>
+<tr>
+    <td>Free photographic service provided</td>
+    <td>Free photographic service provided</td>
+</tr>
+<tr>
+    <td>Given a voucher discount 5%</td>
+    <td>Given a voucher discount 10%</td>
+</tr>
+    
+    <tr>
+        <td>Price = RM 700.00</td>
+        <td>Price = RM 900.00</td>
+    </tr>
+    </table>
+<fieldset style="background-color: white">
+    <h3 style="text-align: center; background-color: aquamarine;">Catering Order Form</h3>        
+
+    <table> 
+        <tr>
+            <form name="f2" action="catering2.html">
+
+        <td>
+                   Name:<p><input type="text" name="text" required/></p>
+                   Phone number:<p><input type="tel" name="tel" required/></p>
+                   Email:<p><input type="email" name="email" required/></p>
+                   Booking Day & Time: <p><input type="datetime-local" name="datetime-local" required/></p>
+                   Type Of Event: <p><input type="text" name="text" required/></p>
+                   Number Of Guest:<p><input type="number" name="number" required/></p>
+                   Package Selected<p><input type="text" name="text" required/></p>
+                   <div id="submit_control">
+                    <input type="submit" id="submit" value="submit" onClick="val()" /></a>
+                    </div>
+        </td>
+        </tr>
+    </table>
+    </fieldset><br/><br/>
+    <div id="fixed"><a href="#top">Go To Top</a></div>
+
+    </body>
+    <footer style ="bottom: 0;">
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+
+    </footer>
+
+ 
+</html>

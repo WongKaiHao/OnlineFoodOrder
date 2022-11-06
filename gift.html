@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>GFC-Gifts Redeem Form</title>
+
+        <script type="text/javascript">
+            function validateForm(){
+                var a = document.forms["codeForm"]["code1"].value;
+                var b = document.forms["codeForm"]["code2"].value;
+                var c = document.forms["codeForm"]["code3"].value;
+
+                if(a == "" || b == "" || c == ""){
+                    alert("Please fill out the code.");
+                    return false;
+                }
+                else{
+                    alert("Cannot use the code");
+                    return true;
+                }
+            }    
+        </script>
+
+        <style>
+            header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image: url(image/body.jpeg);
+                background-size: 100%;
+            }
+            footer{
+                background-image: url(image/footer.jpeg);
+                text-align: center;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+
+            #div1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                margin: 100px;
+            }
+
+            #div2{
+                background-color: white;
+                margin: 120px 20%;
+                padding : 40px 0px;
+                text-align:center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                box-shadow:20px 20px rgb(221, 207, 128);
+                border:1px solid black;
+            }
+
+            #codeForm{
+                display:flex;
+                justify-content: center;
+                background-color:rgb(221, 207, 128);
+            }
+
+            input[type=text]{
+                text-align: center;
+                width:360px;
+                margin:10px 10px 5px 0;
+                padding: 20px;
+                font-size: large;
+                border: 1px solid #ccc;
+            }
+
+            input[type=submit]{
+                font-size: large;
+                background-color:red;
+                width:20%;
+                padding:20px 20px;
+                margin: 20px 0;
+                color: white;
+                border:none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover{
+                background-color:rgb(216, 25, 25);
+            }
+
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+    
+        <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div><br><br>
+
+        <div id="div1">
+            <h1 >Use Redeem Code </h1>
+            <h4>You can receive gifts by using redeem code.</h4>  
+        </div>
+
+        <div id="div2">
+            <div><h2>Please enter the correct 12 digits code.</h2></div>  <!--method="post" action="/action_page.php" for linking-->
+            <form id="codeForm" name="codeForm" onsubmit="return validateForm()" >
+                <div>
+                    <input type="text" id="code1" name="code1" placeholder="1. XXXX" minlength="4" maxlength="4" >
+
+                    <input type="text" id="code2" name="code2" placeholder="2. XXXX" minlength="4" maxlength="4" >
+
+                    <input type="text" id="code3" name="code3" placeholder="3. XXXX" minlength="4" maxlength="4" >
+                    
+                    <div><input type="submit" value="Use"></div>
+                </div>
+            </form>
+        </div>
+        
+
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>

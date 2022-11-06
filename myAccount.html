@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Member Profiles</title>
+    <style>
+        header{
+            width: 99%;
+            margin-top: 0px;
+            background-color:dimgray;
+            text-align: center;
+            position:fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            overflow: scroll;
+            background-image: url(image/body.jpeg);
+            background-size: 100%;
+        }
+        footer{
+            background-image: url(image/footer.jpeg);
+            text-align: center;
+        }
+        .info {
+            float: right;
+            padding: 0.3%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 74.5%;
+            height: auto;
+        }
+    </style>
+     <link href="css/main.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+        <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+    </header>
+
+    <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+    <div class="navbar">
+        <a href="homePage.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="myAccount.html">My Account</a>
+        <div class="dropdown">
+            <button class="dropbtn"> 
+                More<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="catering.html">CATERING</a>
+                <a href="gift.html">GIFT REDEEM</a>
+                <a href="class.html">FAST FOOD MAKING CLASS</a>
+                <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+            </div>
+        </div> 
+        <a href="aboutUs.html">About Us</a>
+    </div>
+    </div>    
+    <br/><br/>
+    <fieldset style="background-color: azure; width: 70%; margin-left: auto; margin-right: auto;">
+    <h1 style="text-align: center;">Member Profiles</h1>
+    <br><br>
+    <div style="float:left">
+        <form action="/action_page.php">
+        <h1 style="margin-left: 10%;">Mr/Mrs</h1>
+        <img src="icon/profiles_logo.jpg" alt="profiles"width="200"height="150" style="margin-left: 10%;"><br>
+        <input type="button"value="Upload Profiles Picture"style="margin-left:10%">
+        <h3 style="margin-left: 10%;">Member ID:XXXXXX</h3><br><br>
+        <h4 style="margin-left: 10%;">Current Password:XXXXXXX</h4>
+        <input type="button"value="change password"style="margin-left:10%;">
+    </div>
+    <div class="info">
+        <table>
+            <tr>
+                <td>
+                    <h2>
+    
+                        Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eric
+                        <br><br>
+                        Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19
+                        <input type="button"value="change"><br><br>
+                        Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male
+                        <input type="button" value="change"><br><br>
+                        Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010-12345678
+                        <input type="button" value="change"><br><br>
+                        Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malaysia
+                        <input type="button"value="change"><br><br>
+                        Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No,123 Jalan Taruc,setapak,53300,kuala lumpur
+                        <input type="button"value="change"><br><br>
+                        Email Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;example@gmail.com
+                        <input type="button"value="change">
+            
+    
+                    </h2>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div  style="clear: both;"></div>
+        <a href="history.html" ><img src="icon/order_logo.png" alt="order history" width="70" style="margin-left: 27%;"/>         
+        <a href="e-wallet.html" ><img src="icon/wallet.png" alt="e-wallet" width="100" style="margin-left: 10%;"/></a>
+        <a href="track.html" ><img src="icon/track-order.png" alt="add to cart" width="70" style="margin-left: 10%;"/></a>
+        <a href="customerservices.html" ><img src="icon/services.png" alt="customer services" width="80" style="margin-left: 10%;"/></a><br>
+     
+        <span style="margin-left: 27%;">Order History</span>
+        <span style="margin-left: 10%;">E-Wallet</span>
+        <span style="margin-left: 13%;">Track Order</span>
+        <span style="margin-left: 7%;">Customer Services</span>
+
+
+    </div>
+    
+    </form>
+    </fieldset><br/><br/>
+    <div id="fixed"><a href="#top">Go To Top</a></div>
+</body>
+<footer>
+    <table style="text-align: center; width:100%">
+        <tr>
+            <td>MENU</td>
+            <td>SERVICES</td>
+            <td>ABOUT US</td>
+            <td>GET IN TOUCH</td>
+        </tr>
+        <tr>
+            <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+            <td><a href="catering.html" style="color: black;">CATERING</a></td>
+            <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+            <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+            <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+            <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+            <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+        </tr>
+        <tr>
+            <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+            <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+        </tr>
+        <tr>
+            <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+            <td><a href="location.html" style="color: black;">LOCATION</a></td>
+        </tr>
+    </table>
+    <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+</footer>
+</body>
+</html>

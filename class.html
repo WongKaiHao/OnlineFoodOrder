@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>GFC-Fast Food Making Class</title>
+
+        <script type="text/javascript">
+            function validateForm(){
+                var a = document.forms["registerForm"]["name"].value;
+                var b = document.forms["registerForm"]["number"].value;
+                var c = document.forms["registerForm"]["email"].value;
+
+                if(a == "" || b == "" || c ==""){
+                    alert("Please complete the registration form!");
+                    return false;
+                }
+                else{
+                    alert("Registered successfully!");
+                    return true;
+                }
+            }
+        </script>
+        <style>
+           header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image: url(image/body.jpeg);
+                background-size: 100%;
+            }
+            footer{
+                background-image: url(image/footer.jpeg);
+                text-align: center;
+            }
+
+            *{
+                box-sizing: border-box;
+            }
+
+            .bg-text{
+                background-color:rgb(0,0,0);
+                background-color:rgba(0,0,0, 0.4);
+                color: white;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                position: absolute;
+                top: 25%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                z-index:2;
+                width: 50%;
+                padding:10px;
+                text-align:center;
+            }
+
+            #div1 {
+                position: relative;
+                border: 1px solid black;
+                width: 100%;
+            }
+
+            #overlay {
+                position:absolute;
+                bottom: 0;
+                left:0;
+                right:0;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: 0.3s ease;
+            }
+
+            #div1:hover #overlay  {
+                height: 90%;
+            }
+
+            #desc{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+
+            #column{
+                float:left;
+                width:33.33%;
+                padding:5px;
+            }
+
+            #row::after{
+                content:"";
+                clear:both;
+                display:table;
+            }
+
+            #div2{
+                text-align: center;
+                padding:100px;
+                margin:0;
+                border: 1px solid red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #classdetails{
+                background-color: whitesmoke;
+                margin:100px 200px;
+            }
+
+            #registerForm{
+                text-align: center;
+                margin: 0 150px;
+                padding: 0;
+                background-color: white;
+            }
+
+            label{
+            padding : 12px 12px 12px 0;
+            display: inline-block;
+            }
+
+            input[type=text], input[type=tel], input[type=email]{
+                width:100%;
+                padding:15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus{
+                background-color: #dddddd;
+                outline: none;
+            }
+
+            input[type=submit]{
+            width: 50%;
+            background-color: red;
+            color:white;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover{
+                background-color:rgb(216, 25, 25);
+            }
+
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+    
+        <div>
+            <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+            <div class="bg-text" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <h1>Fast food making class & courses</h1>
+                <p>Impress your friends with your fast food skills!</p>
+            </div>
+        </div>
+        
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div> <br/><br/>
+
+        <div id="div1" style="text-align: center; ">
+            <img src="image/cook-with-chef-grey-background-vector-19572625.jpg" width="900" alt="courses" height="800">
+            <div id="overlay">
+                <div id="desc">
+                    <h3 style="color: red; font-size: 30px;">About Our classes</h3>
+                    <p style="color:white; font-size : 20px">Join us today and learn some favorite fast food items with a talented chef that we invited.</p>
+                    
+                    <div id="row">
+                        <div id="column" style="color: white;">
+                            <img src="image/HandOnCooking.png" alt="HandOnCooking">
+                            <p>Hand On Cooking</p>  
+                        </div>
+    
+                        <div id="column" style="color: white;">
+                            <img src="image/AboutIconCelebrityChefs.png" alt="allIngredients">
+                            <p>All Ingredients</p>
+                        </div>
+    
+                        <div id="column" style="color: white;">
+                            <img src="image/AboutIconCertifiedCourses.png" alt="Certificate">
+                            <p>Include Certification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div2">
+            <div id="classdetails">
+                <h2 style="background-color:crimson; color: #f1f1f1; padding: 20px;">Class Details</h2>
+                <div style="color:lightslategray;">
+                    Time: 9am - 3pm </br>
+                    Day: Saturday   </br></br>
+                    <h4>Outline</h4>
+                    
+                    <ul style="list-style-type: none; margin-right:40px ;">
+                        <li>Beef Burger</li>
+                        <li>Chicken Burger</li>
+                        <li>Fried Chicken</li>
+                        <li>French fries</li>
+                        <li>Snacks</li>
+                        <li>Etc.</li></br>
+                    <ul>
+                </div>
+            </div>
+
+            <div id="classdetails">
+                <h2 style="background-color: crimson; color: #f1f1f1; padding: 20px;">Class Fee</h2>
+                <div style="color:lightslategray;">
+                    <h2>Total fee:</h2>
+                    <h1><sup>RM</sup>1,500</h1>
+                    <h2>The fee includes:</h2>
+                    Kitchen station</br>
+                    Ingredients</br>
+                    Certificates</br>
+                    Hands-on cooking</br></br>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="div2">
+            <form id="registerForm" name="registerForm"  onsubmit="return validateForm()"> <!--action="/action_page.php" method="post"-->
+                <h2 style="background-color:crimson; color: #f1f1f1; padding: 20px;">Registration</h2>
+                <label for="name">Name</label>
+               <input type="text" placeholder="Your Name" name="name" required>
+
+                <label for="number">Contact Number</label>
+                <input type="tel" placeholder="Your Number" name="number" required>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Your E-mail" name="email" required>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+            
+        
+
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+    </html>

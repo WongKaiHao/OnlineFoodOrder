@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>GFC-Reset Password</title>
+
+        <script type="text/javascript">
+            function validateForm(){
+                var x = document.forms["resetForm"]["mail"].value;
+                if(x == ""){
+                    alert("Please fill out your all information.");
+                    return false;
+                }
+            }
+        </script>
+
+        <style>
+            header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image: url(image/body.jpeg);
+                background-size: 100%;
+            }
+            footer{
+                background-image: url(image/footer.jpeg);
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            #div1{
+                background-color: white;
+                margin: 170px 30%;
+                padding : 30px 30px;
+                text-align:center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            input[type=email]{
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+
+            input[type=tel]{
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            }
+
+            label{
+            padding : 12px 12px 12px 0;
+            display: inline-block;
+            }
+
+            input[type=submit]{
+            width: 80%;
+            background-color: red;
+            color:white;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border:none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover{
+                background-color:rgb(216, 25, 25);
+            }
+
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style ="background-color: #f1f1f1">
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+    
+        <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div><br><br>
+
+        <div id="div1">
+        <form name="resetForm" action= "forgetpass2.html" onsubmit="return validateForm()" method="post">
+
+        <div >Reset Password</div>
+        <div >Please enter your GFC account information to reset.</div>
+            <div>
+                <label for="email"> E-mail </label>
+            </div>
+
+            <div>
+                <input type="email" id="email" name="mail" placeholder="Your E-mail...">
+            </div>
+
+            <div>
+                <label for="contactNo">Contact Number</label>
+            </div>
+
+            <div>
+                <input type="tel" id="contactNo" name="contactno" placeholder="01X-XXXXXXXX (with '-')"
+                pattern="[0][1][0-9]-[0-9]{7}"required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form> 
+        </div>
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>

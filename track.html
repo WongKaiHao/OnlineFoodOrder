@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>track Order</title>
+    <style>
+        header{
+            width: 99%;
+            margin-top: 0px;
+            background-color: dimgray;
+            text-align: center;
+            position:fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            overflow: scroll;
+            background-image: url(image/body.jpeg);
+            background-size: 100%;
+        }
+        footer{
+            background-image: url(image/footer.jpeg);
+            text-align: center;
+        }
+        #myHistory {
+            display: none;
+        }
+    </style>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+        <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+    </header>
+
+    <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+    <div class="navbar">
+        <a href="homePage.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="myAccount.html">My Account</a>
+        <div class="dropdown">
+            <button class="dropbtn"> 
+                More<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="catering.html">CATERING</a>
+                <a href="gift.html">GIFT REDEEM</a>
+                <a href="class.html">FAST FOOD MAKING CLASS</a>
+                <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+            </div>
+        </div> 
+        <a href="aboutUs.html">About Us</a>
+    </div><br><br>
+    <fieldset style="background-color: azure; width: 70%; margin-left: auto; margin-right: auto;">
+    <u style="font-size:xxx-large;">Track Order</u>
+    <img src="icon/track-order.png" alt="track order logo"width="50"><br><br>
+
+     <i style="font-size: xx-large;color: blueviolet;">NAME</i>
+     <table border="1px"width="300" height="50" style="background-color: antiquewhite;">
+         <tr>
+             <td>
+                 <h3>MR/MRS:XXX</h3>
+             </td>
+         </tr>
+     </table>
+     <br>
+
+     
+     <i style="font-size: xx-large;color: blueviolet;">MEMBER ID</i>
+     <table border="1px"width="300" height="50" style="background-color:antiquewhite;">
+         <tr>
+             <td>
+                 <h3>XXXXXXX</h3>
+             </td>
+         </tr>
+     </table>
+
+     <table style="float: right;text-align: center; margin-top: -250px;margin-right: 0px;" border="1px"width="60%" border-spacing="6px">
+            <tr>
+                <th style="font-size: xx-large;font-family: monospace; background-color: coral;" colspan="3">
+                  Tracking Information
+                </th>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                     <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Track Number </p>
+                </td>
+                <td colspan="2" style="background-color:seashell;">#AABB123</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Address</p>
+                </td>
+                <td colspan="2" style="background-color:seashell;">No,123 Jalan Taruc,setapak,53300,kuala lumpur</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Details</p>
+                </td>
+                <td colspan="2" style="background-color: seashell;">chicken burger x2,beef burger x1</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Dates & Times</p>
+                </td>
+                <td colspan="2" style="background-color: seashell;">7 June 2020 , 5:55 PM</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Status</p>
+                </td>
+                <td colspan="2" style="background-color: seashell;">processing</td>
+            </tr>
+            <tr>
+                <td style="background-color: lightpink;">
+                    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: large;">Phone Number</p>
+                </td>
+                <td colspan="2" style="background-color: seashell;">010-12345678</td>
+            </tr>
+     </table><br><br><br>
+
+     
+     <i style="font-size: larger; color: brown;">Click here to show the tracking history:</i>
+     <button onclick="myOrder()" style="margin-left: 50px; font-size: large;">Tracking History</button>
+     <div id="myHistory">
+
+        
+            <table style="float: right;text-align: center; margin-top: 40px;" border="2px"width="100%">
+                <tr>
+                    <th style="font-size: xx-large;font-family: monospace;background-color: plum" colspan="3">
+                      Tracking History
+                    </th>
+                </tr>
+                <tr>
+                    <td style="background-color:honeydew">
+                        Today Order<br>
+                        7 June 2020
+                    </td>
+                    <td style="background-color: lavender">
+                        <img src="image/chicken.jpg" alt="chicken burger"width="100">
+                        <i>chicken burger x2</i><br><br>
+                        <img src="image/beef.jpg"alt="beef burger"width="100">
+                        <i>Beef burger x1</i>
+                    </td>
+                    <td colspan="2" style="background-color: ivory">
+                        3 items<br>
+                        Total:RM20.50<br>
+                        (paid)<br><br>
+                        <i>processing</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: honeydew">
+                        Yesterdays Order<br>
+                        6 June 2020
+                    </td>
+                    <td style="background-color: lavender">
+                        <img src="image/chicken.jpg"alt="chicken burger"width="100">
+                        <i>chicken burger x1</i><br><br>
+                        <img src="image/beef.jpg"alt="beef burger"width="100">
+                        <i>Beef burger x1</i>
+                    </td>
+                    <td colspan="2" style="background-color: ivory">
+                        2 items<br>
+                        Total:RM13.50<br>
+                        (paid)<br><br>
+                        <i>Delivered</i>
+                    </td>
+
+                </tr>
+                </table>
+                </div>
+                <script>
+                    function myOrder() {
+                        document.getElementById("myHistory").style.display = 'block';
+                    }
+                    </script>
+    </fieldset><br/><br/>
+    <div id="fixed"><a href="#top">Go To Top</a></div>
+</body>
+<footer>
+    <table style="text-align: center; width:100%">
+        <tr>
+            <td>MENU</td>
+            <td>SERVICES</td>
+            <td>ABOUT US</td>
+            <td>GET IN TOUCH</td>
+        </tr>
+        <tr>
+            <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+            <td><a href="catering.html" style="color: black;">CATERING</a></td>
+            <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+            <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+        </tr>
+        <tr>
+            <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+            <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+            <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+            <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+        </tr>
+        <tr>
+            <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+            <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+        </tr>
+        <tr>
+            <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+            <td><a href="location.html" style="color: black;">LOCATION</a></td>
+        </tr>
+    </table>
+    <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+</footer>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="300">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Lucky Draw Form</title>
+        <style>
+            header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image: url(image/body.jpeg);
+                background-size: 100%;
+            }
+            footer{
+                background-image: url(image/footer.jpeg);
+                text-align: center;
+            }
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/lucky.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+        <img src="logo.png" alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div>
+        <br><br>
+        <fieldset style="background-color: azure; width: 70%; margin-left: auto; margin-right: auto;">
+        <h1>LUCKY DRAW REGISTER FORM</h1>
+        <h3>Choose Number 1-1000 To Register The Lucky Draw</h3>
+        <label for="name">NAME            :</label><input type="text" id="name" name="name" required/><br/><br/>
+        <label for="num">NR 1-1000 chosen:</label><input type="number" max="1000" id="num" name="num" min="1" max="1000" required/><br/><br/>
+        <label for="phone">PHONE.NO        :</label><input type="text" placeholder="xxx-xxxxxx" id="phone" name="phone" required/><br/><br/>
+        <button type="reset">Cancel</button><button type="submit" onclick="myFunction();">Submit</button><br/><br/>
+        
+        <h1>LUCKY DRAW LIST</h1><br/>
+        <table id="list">
+            <tr>
+                <th>NAME</th>
+                <th>NR 1-1000</th>               
+                <th>PHONE.NO</th>
+            </tr>
+            <tr>
+                <td>WONG KAI HAO</td>
+                <td>12</td>
+                <td>234567856</td>
+            </tr>
+        </table>
+        <br/><br/><br/><br/>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                var copyname =document.getElementById('name').value;
+                var copynum =document.getElementById('num').value;
+                var copyphone =document.getElementById('phone').value;
+
+                var table=document.getElementsByTagName('table')[0];
+
+                var newRow = table.insertRow(table.rows.length);
+
+                var newCol1 =newRow.insertCell(0);
+                var newCol2 =newRow.insertCell(1);
+                var newCol3 =newRow.insertCell(2);
+                
+                newCol1.innerHTML=copyname;
+                newCol2.innerHTML=copynum;
+                newCol3.innerHTML=copyphone;
+            }
+        </script>
+        </fieldset>
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <br><br>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">Contact Us</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">Location</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>

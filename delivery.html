@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="300">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Payment</title>
+        <style>
+        header{
+            width: 99%;
+            margin-top: 0px;
+            background-color: dimgray;
+            text-align: center;
+            position:fixed;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            overflow: scroll;
+            background-image: url(image/body.jpeg);
+            background-size: 100%;  
+        }
+        footer{
+            background-color:rgba(44, 46, 43, 0.637);
+            text-align: center;
+            background-image: url(image/footer.jpeg);
+        }
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/divstyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+        <img src="logo.png" alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div><br/><br/>
+        <fieldset style="background-color:azure;width:40%;margin-left:auto;margin-right:auto;"> 
+            <h1>Customer Delivery Information</h1>
+            <form action="receipt.html" style="text-align: center;">
+                <h3>Billing Address</h3>
+                <label for="fname">Full Name:</label><br/>
+                <i class="fa fa-user"></i><input type="text" id="fname" name="firstname" placeholder="NAME"><br/><br/>
+                <label for="email">Email:</label><br/>
+                <i class="fa fa-envelope"></i><input type="text" id="email" name="email" placeholder="alpha@example.com"><br/><br/>
+                <label for="adr">Address:</label><br/>
+                <i class="fa fa-address-card-o"></i><input type="text" id="adr" name="address" placeholder="Jalan Sunway Batu CAves"><br/><br/>
+                <label for="city">City:</label><br/>
+                <i class="fa fa-institution"></i><input type="text" id="city" name="city" placeholder="Kepong"><br/><br/>
+                <label for="state">State:</label><br/>
+                <input type="text" id="state" name="state" placeholder="NY"><br/><br/>
+                <label for="zip">Zip:</label><br/>
+                <input type="text" id="zip" name="zip" placeholder="10001"><br/><br/>
+                <input type="checkbox" checked="checked" name="sameadr"> Are you sure  of the above information<br/>
+                <input type="submit" value="DONE" class="btn">
+            </form>
+        </fieldset>        
+        <br/><br/>
+        
+        <br/><br/><br/><br/><br/><br/>
+        
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>

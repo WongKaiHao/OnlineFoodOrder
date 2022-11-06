@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+    <meta http-equiv="refresh" content="300">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> Add To Cart</title>
+    <style>
+      header
+      {
+        width: 99%;
+        margin-top: 0px;
+        background-color: dimgray;
+        text-align: center;
+        position:fixed;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      body
+      {
+        font-family: 'Times New Roman', Times, serif;
+        overflow: scroll;
+        background-image: url(image/body.jpeg);
+        background-size: 100%;  
+      }
+      footer
+      {
+        background-image: url(image/footer.jpeg);
+        text-align: center;
+      }
+    </style>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+      <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+      <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+    </header>
+    <img src="logo.png" alt="logo" width="20%" height="15%" id="top"/>
+    <div class="navbar">
+      <a href="homePage.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="myAccount.html">My Account</a>
+      <div class="dropdown">
+        <button class="dropbtn"> 
+          More<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="catering.html">CATERING</a>
+          <a href="gift.html">GIFT REDEEM</a>
+          <a href="class.html">FAST FOOD MAKING CLASS</a>
+          <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+        </div>
+      </div> 
+      <a href="aboutUs.html">About Us</a>
+    </div><br/><br>
+      <form action="payment.html">
+        <table id="product" style="width: 70%; background-color: azure;margin-left: auto;margin-right: auto; text-align: center;">
+          <tr>
+            <th style="width: 30%;">PRODUCT</th >
+            <th style="width: 30%;">PRICE(RM)</th>
+            <th style="width: 20%;">Quantity</th>
+            <th style="width: 20%;">Sub-Total Price(RM)</th>
+          </tr>
+          <tr>
+            <td><img src="image/cheese.jpg" alt="product1" width="300cm" height="300cm"/><br/><b>Double-Stacked Cheeseburger</b></td>
+            <td><b>8.00</b></td>
+            <td>
+              <input type="number" min="0" name="product1" id="product1" placeholder="1" onblur="calculation();">
+            </td>
+            <td name="s1" id="s1"></td>
+          </tr>
+          <tr>
+            <td><img src="image/vegan.jpeg" alt="product2" width="300cm" height="300cm"/><br/><b>Vegan Mushroom Bean Burger</b></td>
+            <td><b>6.00</b></td>
+            <td>
+              <input type="number" min="0" name="product2" id="product2" placeholder="1" onblur="calculation();">
+            </td>
+            <td name="s2" id="s2"></td>
+          </tr>
+          <tr>
+            <td><img src="image/chicken.jpg" alt="product3" width="300cm" height="300cm"/><br/><b>Moist Chicken Burgers</b></td>
+            <td><b>7.50</b></td>
+            <td>
+              <input type="number" min="0" name="product3" id="product3" placeholder="1" onblur="calculation();">
+            </td>
+            <td name="s3" id="s3"></td>
+          </tr>
+          <tr>
+            <td><img src="image/beef.jpg" alt="product4" width="300cm" height="300cm"/><br/><b>Classic Beef Burgers</b></td>
+            <td><b>8.00</b></td>
+            <td>
+              <input type="number" min="0" name="product4" id="product4" placeholder="1" onblur="calculation();">
+            </td>
+            <td name="s4" id="s4"></td>
+          </tr>
+          <tr>
+            <td><img src="image/fish.jpg" alt="product5" width="300cm" height="300cm"/><br/><b>Filet-O-Fish Burger</b></td>
+            <td><b>5.00</b></td>
+            <td>
+              <input type="number" min="0" name="product5" id="product5" placeholder="1" onblur="calculation();">
+            </td>
+            <td name="s5" id="s5"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Total Price</td>
+            <td name="total" id="total"></td>
+          </tr>
+          <tr style="text-align: center;">
+            <td colspan="4">
+              <input type="submit" value="Proceed To Payment"/>
+            </td>
+          </tr</tr>>
+        </table>
+      </form>
+    </div>
+    <br/><br/><br/><br/>
+    <div id="fixed"><a href="#top">Go To Top</a></div>
+    <script type="text/javascript">
+      function calculation()
+      {
+        var a,b,c,d,e,t;
+        a= parseFloat(document.getElementById('product1').value *8);
+        document.getElementById("s1").innerHTML=a.toFixed(2);
+        b= parseFloat(document.getElementById('product2').value *6);
+        document.getElementById("s2").innerHTML=b.toFixed(2);
+        c= parseFloat(document.getElementById('product3').value *7.5);
+        document.getElementById("s3").innerHTML=c.toFixed(2);
+        d= parseFloat(document.getElementById('product4').value *8);
+        document.getElementById("s4").innerHTML=d.toFixed(2);
+        e= parseFloat(document.getElementById('product5').value *5);
+        document.getElementById("s5").innerHTML=e.toFixed(2);
+
+        t= a+b+c+d+e;
+        document.getElementById("total").innerHTML=t.toFixed(2);
+      } 
+    </script>
+  </body>
+  <footer>
+    <table style="text-align: center; width:100%">
+      <tr>
+        <td>MENU</td>
+        <td>SERVICES</td>
+        <td>ABOUT US</td>
+        <td>GET IN TOUCH</td>
+      </tr>
+      <tr>
+        <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+        <td><a href="catering.html" style="color: black;">CATERING</a></td>
+        <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+        <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+    </tr>
+    <tr>
+        <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+        <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+        <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+        <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+    </tr>
+    <tr>
+        <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+        <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+    </tr>
+    <tr>
+        <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+        <td><a href="location.html" style="color: black;">LOCATION</a></td>
+    </tr>
+    </table>
+    <p><a href="term.html" style="color: black;">Term and Conditions</a> | COPYRIGHT&copy;2020 GFC</p>
+  </footer>
+</html>

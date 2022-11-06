@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="GFC,gfc,restaurant,fast food">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>GFC-Gallery</title>
+        <style>
+            header{
+                width: 99%;
+                margin-top: 0px;
+                background-color: dimgray;
+                text-align: center;
+                position:fixed;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                overflow: scroll;
+                background-image: url(image/body.jpeg);
+                background-size: 100%;
+            }
+            footer{
+                background-image: url(image/footer.jpeg);
+                text-align: center;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin:0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            #column{
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+
+            #column img{
+                margin-top: 12px;
+            }
+
+            #row:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        </style>
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="homePage.html"><img src="logo.png" alt="logo" width="2%" height="2%"/></a>
+            <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:30px; color: black; float:right;"></i></a>
+            <a href="login.html"><i class="fa fa-user" style="font-size:30px; color: black; float:right;"></i></a>
+        </header>
+    
+        <img src="logo.png"alt="logo" width="20%" height="15%" id="top"/>
+        <div class="navbar">
+            <a href="homePage.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="myAccount.html">My Account</a>
+            <div class="dropdown">
+                <button class="dropbtn"> 
+                    More<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="catering.html">CATERING</a>
+                    <a href="gift.html">GIFT REDEEM</a>
+                    <a href="class.html">FAST FOOD MAKING CLASS</a>
+                    <a href="luckydraw.html">LUCKY DRAW / CONTEST FORM</a>
+                </div>
+            </div> 
+            <a href="aboutUs.html">About Us</a>
+        </div><br><br>
+
+        <div style="text-align: center;">
+            <h1>Gallery</h1>
+        </div>
+        
+        <hr/>
+
+        <div id="row">
+            <div>
+                <h2>Burger Series</h2>
+                <h3>You can click the burgers for more details</h3>
+            </div>
+            
+            <div id="column">
+                <img src="image/chicken-delux.jpg" style="width:100%" alt="chicken" usemap="#chicken">
+                <img src="image/beef2.jpg" style="width:70%; margin-left: 100px;" alt="beef" usemap="#beef">
+                
+                <map id="chicken" name="chicken">
+                    <area shape="poly" coords="456,102,282,142,244,222,207,267,186,305,233,333,215,370,215,393,409,505,732,434,740,385,757,367,755,331,717,302,706,274,693,212,623,133" alt="chickenburger" href="product.html">
+                </map>
+
+                <map id="beef" name="beef">
+                    <area shape="poly" coords="303,416,146,456,83,529,54,562,35,593,61,616,84,655,79,715,82,767,320,783,537,772,548,711,536,670,556,630,584,589,563,547,520,515,488,464,400,427" alt="beefburger" href="product.html">
+                </map>
+            </div>
+
+            <div id="column">
+                <img src="image/fish2.jpg" style="width:100%" alt="fish" usemap="#fish">
+                <img src="image/vegburger.jpg" style="width:100%" alt="vegan" usemap="#vegan">
+                <img src="image/cheese2.jpg" style="width:100%" alt="cheese" usemap="#cheese">
+
+                <map id="fish" name="fish">
+                    <area shape="circle" coords="150,400,138" alt="fishburger1" href="product.html">
+                    <area shape="circle" coords="488,539,183" alt="fishburger2" href="product.html">
+                    <area shape="circle" coords="788,372,113" alt="fishburger3" href="product.html">
+                </map>
+
+                <map id="vegan" name="vegan">
+                    <area shape="rect" coords="675,404,201,82" alt="veganburger" href="product.html">
+                </map>
+
+                <map id="cheese" name="cheese">
+                    <area shape="rect" coords="84,42,572,503" alt="cheeseburger" href="product.html">
+                </map>
+            </div>
+
+
+        </div>
+
+        <div id="fixed"><a href="#top">Go To Top</a></div>
+    </body>
+    <footer>
+        <table style="text-align: center; width:100%">
+            <tr>
+                <td>MENU</td>
+                <td>SERVICES</td>
+                <td>ABOUT US</td>
+                <td>GET IN TOUCH</td>
+            </tr>
+            <tr>
+                <td><a href="cfoodform.html" style="color: black;">CUSTOMIZE FAST FOOD FORM</a></td>
+                <td><a href="catering.html" style="color: black;">CATERING</a></td>
+                <td><a href="aboutUs.html" style="color: black;">GFC Info</a></td>
+                <td><a href="contactus.html" style="color: black;">CONTACT US</a></td>
+            </tr>
+            <tr>
+                <td rowspan="3"><a href="faq.html" style="color: black;">FAQ</a></td>
+                <td><a href="gift.html" style="color: black;">GIFT REDEEM</a></td>
+                <td><a href="promotion.html" style="color: black;">PROMOTION</a></td>
+                <td rowspan="3"><a href="feedback.html" style="color: black;">FEEDBACK</a></td>
+            </tr>
+            <tr>
+                <td><a href="class.html" style="color: black;">FAST FOOD MAKING CLASS</a></td>
+                <td><a href="job.html" style="color: black;">JOB VACANCIES</a></td>
+            </tr>
+            <tr>
+                <td><a href="luckydraw.html" style="color: black;">LUCKY DRAW / CONTEST FORM</a></td>
+                <td><a href="location.html" style="color: black;">LOCATION</a></td>
+            </tr>
+        </table>
+        <p><a href="term.html" style="color: black;">Term and Cobditons</a> | COPYRIGHT&copy;2020 GFC</p>
+    </footer>
+</html>
